@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = parseInt(prompt("enter n:"))
+        document.write(`${n}<br>`)
+        var sum=0;
+        while(n>0){
+              var r=n%10;
+              sum = sum*10+r;
+              n=parseInt(n/10);
+        }
+        while(sum>0){
+            var r=sum%10;
+            switch(r){
+                case 0:document.write('Z');break;
+                case 1:document.write('O');break;
+                case 2:document.write('T');break;
+                case 3:document.write('T');break;
+                case 4:document.write('F');break;
+                case 5:document.write('F');break;
+                case 6:document.write('S');break;
+                case 7:document.write('S');break;
+                case 8:document.write('E');break;
+                case 9:document.write('N');break;
+            }
+            sum=parseInt(sum/10);
+        }
+         
+    </script>
+     
+</body>
+</html>
