@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .div1{
+            background-color: aliceblue;
+            border: 1px solid black;
+            position: absolute;
+            top:30px;
+            left:500px;
+            padding:20px;
+            border-radius: 10px;
+            height: 230px;
+        }
+        .div1 button{
+            color: blueviolet;
+            position: absolute;
+            right:24px;
+            bottom: 16px;
+           
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1" id="div2">
+      <h2>simple intrest calculator</h2>
+        <table>
+            <tr><td>User name</td>     <td><input type="text" id="name"></td>           </tr>
+            <tr><td>Amount</td>        <td><input type="number" id="pricipal"></td>     </tr>
+            <tr><td>Time</td>          <td><input type="number" id="time"></td>         </tr>
+            <tr><td>Age</td>           <td><input type="number" id="age"></td>          </tr>
+        </table>
+        <h3 id="ans"></h3>
+        <button id="btn" onclick="fun()">calculat</button>
+        
+        <script>
+             
+             
+           function fun(){
+             
+            var str=document.getElementById("name").value;
+            var P=parseInt(document.getElementById("pricipal").value);
+            var T=parseInt(document.getElementById("time").value);
+            var age=parseInt(document.getElementById("age").value);
+            
+            if(age<60){
+                var R=6;
+            }
+            else{
+                var R=7.5;
+            }
+
+            var SI=(P*T*R)/100;
+            var tl=parseFloat(SI)+parseInt(P);
+           
+            if(Number.isNaN(tl)){
+                document.getElementById("ans").innerHTML=`${str}  your Total Amount is : 0`;
+            }
+            else{
+                document.getElementById("ans").innerHTML=`${str}  your Total Amount is : ${tl}`;
+            }
+            
+            
+            // document.getElementById("div2").style.height=("250px");
+           }
+         
+        </script>
+
+    </div>
+</body>
+</html>

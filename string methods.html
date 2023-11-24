@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="sai"></h2>
+    <script>
+        var str="Sai Kumar Krishna";
+        document.getElementById("sai").innerHTML+=str.charAt(0)+"<br>";
+        document.getElementById("sai").innerHTML+=str.charCodeAt(0)+"<br>";
+        document.getElementById("sai").innerHTML+=str.toUpperCase()+"<br>";
+        document.getElementById("sai").innerHTML+=str.toLowerCase()+"<br>";
+        document.getElementById("sai").innerHTML+=str.concat(" &nbsp bongu");
+        document.getElementById("sai").innerHTML+=str.slice(2,5)+"<br>";
+        document.getElementById("sai").innerHTML+=str.substring(2,5)+"<br>";
+        document.getElementById("sai").innerHTML+=str.substr(2,5)+"<br>";
+        document.getElementById("sai").innerHTML+=str.endsWith('a')+"<br>";
+        document.getElementById("sai").innerHTML+=str.indexOf('s')+"<br>";
+        document.getElementById("sai").innerHTML+=str.length+"<br>";
+        document.getElementById("sai").innerHTML+=str.match("S")+"<br>";
+        document.getElementById("sai").innerHTML+=str.split("")+"<br>";
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var map1=new Map();
+        var s1={ftname:"sai",id:12,class:"mca"}
+        var s2={ftname:"gopi",id:13,class:"mba"}
+        var s3={ftname:"raghu",id:14,class:"bsc"}
+        var s4={ftname:"manisha",id:15,class:"mca"}
+
+        map1.set(1,s1);
+        map1.set(2,s2);
+        map1.set(3,s3);
+        map1.set(4,s4);
+
+    for(var obj of map1){
+        obj.forEach((value,ind)=>{document.write(`${ind}:${value}`)})
+    }
+    </script>
+</body>
+</html>
